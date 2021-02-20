@@ -8,7 +8,9 @@ add_subdirectory (apps)
 set (my_cache_variable "hejsan" CACHE STRING "hallå" )
 set (my_bool off CACHE INTERNAL BOOL "kfmd")
 
-
+if (APPLE)
+	message ("APPLE!!!")
+endif ()
 
 # message (${my_cache_variable})
 
